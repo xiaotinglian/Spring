@@ -7,7 +7,7 @@
 
     <bean id="student" class="org.genspark.Student">
         <property name="id" value="1" />
-        <property name="name" value="shawn" />+
+        <property name="name" value="shawn" />
         <property name="ph">
             <list>
                 <ref bean="phone" />
