@@ -5,10 +5,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Alien {
-    @Value("#{T(Integer).parseInt('17')}")
+    @Value("#{20}")
     private int age;
 
-    @Value("#{new String('Xarian VI')}")
+    @Value("#{'xeon'}")
     private String homePlanet;
 
     @Value("#{100-alien.age}")

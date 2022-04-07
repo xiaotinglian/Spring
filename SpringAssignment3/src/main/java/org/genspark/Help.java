@@ -18,11 +18,9 @@ public class Help {
         System.out.println("@After Aspect");
     }
 
-
-
     @AfterReturning("execution(public void show())")
     public void afterReturn(){
-        System.out.println("AfterReturning Aspect");
+        System.out.println("After Returning Aspect");
     }
     @AfterThrowing("execution(public void show())")
     public void afterThrow(){

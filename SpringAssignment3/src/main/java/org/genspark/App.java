@@ -14,5 +14,6 @@ public class App
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         Alien obj = (Alien) context.getBean(Alien.class);
         obj.show();
+
     }
 }
