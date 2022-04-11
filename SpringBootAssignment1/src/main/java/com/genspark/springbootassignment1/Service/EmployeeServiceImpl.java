@@ -12,33 +12,56 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     public EmployeeServiceImpl(List<Employee> list) {
         this.list = new ArrayList<>();
-        list.add(new Employee(101, "John", "John@gmail.com"));
+        list.add(new Employee(1, "John", "John@gmail.com"));
         list.add(new Employee(2, "Jane", "Jane@gmail.com"));
         list.add(new Employee(3, "Jene", "Jene@gmail.com"));
     }
 
     @Override
-    public List<Employee> getAllEmployees() {
+    public Employee getByEmployeeId(int id){
+        Employee c = null;
+        for (Employee employee : this.list){
+            if (employee.getEmployeeId() == id) {
+                c = employee;
+                break;
+            }
+        }
+
+        return c;
+    }
+    @Override
+    public List<Employee> getAllEmployees(){
         return list;
     }
-
     @Override
-    public Employee getEmployeeById(Long id) {
-        return null;
+    public Employee addEmployee(Employee Employee){
+        list.add(Employee);
+        return getByEmployeeId(Employee.getEmployeeId());
     }
-
     @Override
-    public Employee createEmployee(Employee employee) {
-        return null;
+    public Employee updateEmployee(Employee Employee){
+        String title = Employee.getName();
+        String instructor = Employee.getEmail();
+        Employee c = null;
+        for ( Employee e : this.list){
+            if (e.getEmployeeId() == Employee.getEmployeeId()){
+                e.setName(title);
+                e.setEmail(instructor);
+                c = e;
+                break;
+            }
+        }
+        return c;
     }
-
     @Override
-    public Employee updateEmployee(Employee employee) {
-        return null;
-    }
-
-    @Override
-    public void deleteEmployee(Long id) {
-
+    public Employee deleteEmployee(int EmployeeId){
+        Employee c = null;
+        for ( Employee e : this.list){
+            if (e.getEmployeeId() == EmployeeId){
+                list.remove(e);
+                break;
+            }
+        }
+        return c;
     }
 }
