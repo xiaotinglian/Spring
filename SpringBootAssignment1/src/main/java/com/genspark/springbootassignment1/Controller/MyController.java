@@ -67,7 +67,7 @@ public class MyController {
     @Autowired
     private EmployeeService employeeService;
 
-    @GetMapping("employees")
+    @GetMapping("/employees")
     public List<Employee> getEmployees(){
         return this.employeeService.getAllEmployees();
     }
