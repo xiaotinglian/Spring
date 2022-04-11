@@ -10,8 +10,8 @@ import java.util.List;
 public class EmployeeServiceImpl implements EmployeeService {
     List<Employee> list;
 
-    public EmployeeServiceImpl(List<Employee> list) {
-        this.list = new ArrayList<>();
+    public EmployeeServiceImpl() {
+        list = new ArrayList<>();
         list.add(new Employee(1, "John", "John@gmail.com"));
         list.add(new Employee(2, "Jane", "Jane@gmail.com"));
         list.add(new Employee(3, "Jene", "Jene@gmail.com"));
