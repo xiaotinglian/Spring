@@ -1,4 +1,4 @@
-package com.genspark.springbootassignment1.Entity;
+package com.genspark.springbootassignment2.Entity;
 
 public class Course {
 

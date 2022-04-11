@@ -1,14 +1,14 @@
-package com.genspark.springbootassignment1.Controller;
+package com.genspark.springbootassignment2.Controller;
 
-import com.genspark.springbootassignment1.Entity.Course;
-import com.genspark.springbootassignment1.Entity.Employee;
-import com.genspark.springbootassignment1.Service.CourseService;
-import com.genspark.springbootassignment1.Service.EmployeeService;
+import com.genspark.springbootassignment2.Entity.Employee;
+import com.genspark.springbootassignment2.Service.CourseService;
+import com.genspark.springbootassignment2.Service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import com.genspark.springbootassignment2.Entity.Course;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.genspark.springbootassignment1.Service;
+package com.genspark.springbootassignment2.Service;
 
-import com.genspark.springbootassignment1.Entity.Course;
+import com.genspark.springbootassignment2.Entity.Course;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
