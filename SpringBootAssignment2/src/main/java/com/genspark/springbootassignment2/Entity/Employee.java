@@ -1,13 +1,21 @@
 package com.genspark.springbootassignment2.Entity;
 
+import javax.persistence.*;
 
+@Entity
+@Table(name = "tbl_employee")
 public class Employee {
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int employeeId;
     private String name;
     private String email;
 
-    public Employee(int employeeId, String name, String email) {
-        this.employeeId = employeeId;
+    public Employee() {
+    }
+
+    public Employee(String name, String email) {
         this.name = name;
         this.email = email;
     }
