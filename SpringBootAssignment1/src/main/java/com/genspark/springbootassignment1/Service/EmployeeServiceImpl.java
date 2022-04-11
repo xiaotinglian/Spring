@@ -54,7 +54,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         return c;
     }
     @Override
-    public Employee deleteEmployee(int EmployeeId){
+    public String deleteEmployee(int EmployeeId){
         Employee c = null;
         for ( Employee e : this.list){
             if (e.getEmployeeId() == EmployeeId){
@@ -62,6 +62,6 @@ public class EmployeeServiceImpl implements EmployeeService {
                 break;
             }
         }
-        return c;
+        return "delete success";
     }
 }
