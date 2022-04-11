@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 public class MyController {
-    //Request from url http://localhost:8080/home?name=John
+    //Request from url http://localhost:8080/home?name=John&age=25
 //    @RequestMapping("home")
 //    public String Home(@RequestParam(value="name", defaultValue="World") String name, @RequestParam(value="age", defaultValue="0") String age) {
 //        return "Hello " + name+" "+age;
